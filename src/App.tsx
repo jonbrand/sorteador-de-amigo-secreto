@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
-import { Header } from './components/Header/Header';
+import { Form } from './components/Form/Form';
 /* import { HeroSection } from './components/HeroSection/HeroSection'; */
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <RecoilRoot>
         <Routes>
-          <Route path='/' element={Header} />
+          <Route path='/' element={Form} />
         </Routes>
        {/*  /* <Header />
         <HeroSection /> */}
