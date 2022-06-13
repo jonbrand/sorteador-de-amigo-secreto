@@ -37,6 +37,7 @@ export const Raffle = () => {
             value={participantTime}
             onChange={event => setParticipantTime(event.target.value)}
           >
+            <RaffleOption>Selecione seu nome</RaffleOption>
             {participants.map(participant => <RaffleOption key={participant}>{participant}</RaffleOption>)}
           </RaffleSelect>
           <RaffleButton>Sortear</RaffleButton>

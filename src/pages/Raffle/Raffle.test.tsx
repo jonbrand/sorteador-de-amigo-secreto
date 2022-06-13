@@ -43,7 +43,7 @@ jest.mock('../../components/state/hooks/useRaffleResult', () => {
 
     const options = screen.queryAllByRole('option');
     
-    expect(options).toHaveLength(participants.length);
+    expect(options).toHaveLength(participants.length + 1);
   });
 
   test('o amigo secreto e exibido quando solicitado', () => {

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const RaffleContainer = styled.section`
-  margin: 64px 0;
+  color: #FE652BFC;
+  font-size: 25px;
 `;
 
 export const RaffleForm = styled.form``;
@@ -56,6 +57,8 @@ export const RaffleParagraph = styled.p`
   font-size: 20px;
   font-weight: 200;
   margin: 32px 0;
+
+  color: #FE652BFC;
 `;
 
 
