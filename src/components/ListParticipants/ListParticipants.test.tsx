@@ -42,5 +42,5 @@ describe('uma lista preenchida de participantes', () => {
     const itens = screen.queryAllByRole('listitem')
   
     expect(itens).toHaveLength(participants.length);
-  })
-})
+  });
+});
