@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 import { Header } from './components/Header/Header';
-import { HeroSection} from './components/HeroSection/HeroSection';
+import { Card } from './components/Card/Card';
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <HeroSection />
+    <Card />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
