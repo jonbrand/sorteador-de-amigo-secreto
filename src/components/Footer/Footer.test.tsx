@@ -13,6 +13,14 @@ jest.mock('../state/hooks/useListParticipants', () => {
 
 const mockNavigate = jest.fn();
 
+const mockRaffle = jest.fn();
+
+jest.mock('../state/hooks/useRaffle', () => {
+  return {
+    useRaffle: () => mockRaffle
+  }
+});
+
 jest.mock('react-router-dom', () => {
   return {
     useNavigate: () => mockNavigate
@@ -67,5 +75,7 @@ describe('quando existem participantes suficientes', () => {
     expect(mockNavigate).toHaveBeenCalledTimes(1);
     // qual a rota chamada
     expect(mockNavigate).toHaveBeenCalledWith('/raffle');
+    // se o sorteio foi chamado
+    expect(mockRaffle).toHaveBeenCalledTimes(1);
   });
 });
